@@ -77,7 +77,7 @@ for start, end in zip(
     classmap_vis = map(lambda x: ((x-x.min())/(x.max()-x.min())), classmap_answer)
 
     for vis, ori,ori_path, l_name in zip(classmap_vis, current_images, current_image_paths, current_label_names):
-        print l_name
+        print(l_name)
         plt.imshow( ori )
         plt.imshow( vis, cmap=plt.cm.jet, alpha=0.5, interpolation='nearest' )
         plt.show()
