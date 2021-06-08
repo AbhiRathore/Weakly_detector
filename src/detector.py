@@ -1,6 +1,8 @@
 import tensorflow as tf
 import numpy as np
-import cPickle
+# import cPickle
+import pickle5 as cPickle
+
 import ipdb
 class Detector():
     def __init__(self, weight_file_path, n_labels):
